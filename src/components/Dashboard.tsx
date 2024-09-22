@@ -59,25 +59,25 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-gray-100 lg:flex-row">
+    <div className="flex flex-col h-screen bg-indigo-950 lg:flex-row">
       {/* Sidebar */}
-      <div className={`lg:w-64 bg-white shadow-md lg:block ${isSidebarOpen ? 'block' : 'hidden'}`}>
+      <div className={`lg:w-64 bg-indigo-950 shadow-md lg:block ${isSidebarOpen ? 'block' : 'hidden'}`}>
         <div className="p-4 flex justify-between items-center lg:justify-start">
-          <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-200">Percept-IQ</h1>
           <Button variant="ghost" size="icon" onClick={toggleSidebar} className="lg:hidden">
             <Menu className="h-6 w-6" />
           </Button>
         </div>
         <nav className="mt-4">
-          <a href="#" className="flex items-center px-4 py-2 text-gray-700 bg-gray-200">
+          <a href="#" className="flex items-center px-4 py-2 text-gray-200 hover:bg-indigo-800 ">
             <LayoutDashboard className="mr-3 h-5 w-5" />
             Dashboard
           </a>
-          <a href="#" className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">
+          <a href="#" className="flex items-center px-4 py-2 text-gray-200 hover:bg-indigo-700">
             <Users className="mr-3 h-5 w-5" />
             Users
           </a>
-          <a href="#" className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">
+          <a href="#" className="flex items-center px-4 py-2 text-gray-200 hover:bg-indigo-700">
             <TrendingUp className="mr-3 h-5 w-5" />
             Trends
           </a>
@@ -87,7 +87,7 @@ export default function Dashboard() {
       {/* Main content */}
       <div className="flex-1 overflow-auto">
         {/* Top bar */}
-        <div className="bg-white shadow-sm p-4 flex justify-between items-center">
+        <div className="bg-indigo-950 shadow-sm p-4 flex justify-between items-center">
           <div className="lg:hidden">
             <Button variant="outline" onClick={toggleSidebar}>
               <Menu className="h-6 w-6 mr-2" />
@@ -95,7 +95,7 @@ export default function Dashboard() {
             </Button>
           </div>
           <div className="flex-1 text-center">
-            <h2 className="text-xl font-semibold text-gray-800">Product/Company Name</h2>
+            <h2 className="text-xl font-semibold text-gray-200">Product/Company Name</h2>
           </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
